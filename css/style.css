@@ -1,0 +1,591 @@
+.room {
+  background-image: url("../img/35.jpg");
+  background-size:cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+  overflow: hidden;
+}
+
+.center_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center_text {
+  text-align: center;
+}
+.title_img_men{
+  position: absolute;
+  top: 55%;
+  left: 0px;
+}
+.title_img_women{
+  position: absolute;
+  top: 55%;
+  right: -40px;
+}
+.gif_women{
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+  height: 250px;
+  width: auto;
+}
+.gif_men{
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  height: 250px;
+  width: auto;
+}
+.signature_img{
+  position: absolute;
+  right: 70px;
+  bottom: 30px;
+  height: 200px;
+  width: auto;
+}
+
+.title {
+  background-color: #FFF;
+  width: 1200px;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.button_start {
+  height: 100px;
+  width: 500px;
+  margin-top: 50px;
+  background-color: #676767;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFF;
+  border-radius: 20px;
+  border: 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.frameSet_list {
+  width: 1200px;
+  height: 550px;
+  display: flex;
+  margin-top: 25px;
+}
+
+.frameSet {
+  height: 550px;
+  width: 280px;
+  background: #D9D9D9;
+  margin-right: 25px;
+}
+
+.frameSet:last-child {
+  margin: 0px;
+}
+
+.transition_text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.send_numbers {
+  display: flex;
+  margin-top: 50px;
+}
+
+.send_number:nth-child(3) {
+  margin-right: 70px;
+}
+
+.send_number:last-child {
+  margin-right: 12px;
+}
+
+.send_number:first-child {
+  margin-left: 12px;
+}
+
+.send_number {
+  background-color: #FFF;
+  height: 280px;
+  width: 170px;
+  margin-right: 25px;
+  font-size: 150px;
+  font-weight: 600;
+  line-height: 280px;
+  text-align: center;
+}
+
+.finish_countDown {
+  margin-top: 70px;
+}
+
+.button_finish {
+  height: 100px;
+  width: 500px;
+  margin-top: 10px;
+  background-color: #676767;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFF;
+  border-radius: 20px;
+  border: 0px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*----------------------------------------*/
+
+.back_room{
+  display: none;
+  height: 100vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bg {
+  position: relative;
+}
+
+#bg_img {
+  z-index: -5;
+  transform: scale(-1, 1);
+}
+
+.frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 645px;
+  height: 780px;
+}
+
+#sourceCanvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.control {
+  position: absolute;
+  z-index: 999;
+  background-color: rgb(213, 213, 213);
+  display: none;
+}
+
+.timer_circle {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-family: "Georgia";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #DDD;
+}
+
+.progress_counter {
+  position: absolute;
+  top: 270px;
+  right: 80px;
+  font-family: "Georgia";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #DDD;
+  color: #888888;
+}
+
+.flash_light {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFF;
+  opacity: 1;
+  z-index: 9999999;
+}
+
+.result {
+  position: absolute;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+}
+
+/*一時*/
+.btn_style {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.result_photo {
+  position: relative;
+  height: 100Vh;
+  width: 100%;
+}
+
+.result_photo_frame {
+  height: 650px;
+  width: 500px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+}
+
+#result_canvas {
+  background-color: black;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center_text {
+  text-align: center;
+}
+
+.title {
+  background-color: #FFF;
+  width: 1200px;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.introduce {
+  margin-top: 20px;
+  height: 450px;
+  width: 1200px;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  height: 100px;
+  width: 500px;
+  border: #000 solid 5px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.button_center {
+  margin-left: 357px;
+}
+
+.button_y {
+  background-color: #676767;
+  color: #FFF;
+  border: 0px;
+}
+
+/*---------------------------*/
+
+.radialtimer {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+}
+
+.radialtimer .n {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  font-family: "Georgia";
+  font-size: 70px;
+  color: #888888;
+  z-index: 3;
+}
+
+.radialtimer .slice {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  clip: rect(0px, 200px, 200px, 100px);
+}
+
+.radialtimer .slice.nc {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.radialtimer .slice .q {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  border: 16px white solid;
+  border-radius: 50%;
+  clip: rect(0px, 100px, 100px, 0px);
+  z-index: 2;
+}
+
+.radialtimer .slice .pie {
+  border: 15px #DDD solid;
+  background-color: #DDD;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  clip: rect(0px, 100px, 200px, 0px);
+  border-radius: 50%;
+  transition: all 1s linear;
+  z-index: 1;
+}
+
+/*---------------------------*/
+.bg_circle {
+  background-color: #FFF;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/*-------------------------------*/
+#next {
+  width: 410px;
+  height: 120px;
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 40%, 80% 40%, 80% 0, 100% 100%, 0 100%);
+  position: absolute;
+  top: 80%;
+  left: 69%;
+
+}
+
+#fill {
+  width: 0;
+  height: 100%;
+  background-color: #DDD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: fillAnimation 5s linear forwards;
+}
+
+@keyframes fillAnimation {
+  100% {
+    width: 100%;
+  }
+}
+
+#next_timer {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+/*----------------------------------------*/
+.checkPicture {
+  background-color: #FFF;
+  width: 250px;
+  height: 340px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkPicture canvas {
+  width: 210px;
+  height: 260px;
+  background-color: #C8C8C8;
+  top: 20px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+}
+
+.checkPictures {
+  margin-top: 25px;
+  gap: 20px;
+  overflow-x: auto;
+  width: 1170px;
+}
+
+.scroll_content {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.checkPictures::-webkit-scrollbar {
+  height: 12px;
+  /* スクロールバーの高さ */
+}
+
+.checkPictures::-webkit-scrollbar-thumb {
+  background: #aaa;
+  /* ツマミの色 */
+  border-radius: 6px;
+  /* ツマミ両端の丸み */
+}
+
+.checkPictures::-webkit-scrollbar-track {
+  background: #ddd;
+  /* トラックの色 */
+  border-radius: 6px;
+  /* トラック両端の丸み */
+}
+.button_list {
+  margin-top: 30px;
+  margin-left: 55px;
+  display: flex;
+  gap: 100px;
+}
+.frameSetArea{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+}
+.frameSetArea .button_y{
+  background-color: #FFF;
+  color: #000;
+}
+.frameSetArea .button_n{
+  background-color: #878787;
+  color: #FFF;
+  border: 0px;
+}
+.frameSetImg{
+  background-color: #FFF;
+  width: 590px;
+  height: 360px;
+}
+#frameSetImgA{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#frameSetImgB{
+  position: absolute;
+  top: 20px;
+  left: 410px;
+  box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.49);
+
+}
+.frameSetImgs{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 1000px;
+  height: 380px;
+}
+
+#bar{
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+}
+.clip-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #878787;
+  animation: clip 5s forwards;
+}
+@keyframes clip {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#btn2{
+  position: absolute;
+  bottom: 40px;
+  width: 400px;
+  right: 30px;
+  background-color: #FFF;
+  color: #000;
+  border: #DDD solid 5px;
+}
+#open_settingRoom{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  z-index: 100001;
+}
+.room_setting{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+  z-index: 100000;
+}
+.center_setting{
+  width: 500px;
+}
+.scroll-disabled {
+  overflow: hidden;
+}
+.frame_kind{
+  height: 100%;
+overflow: hidden;
+}

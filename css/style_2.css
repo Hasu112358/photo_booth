@@ -1,0 +1,884 @@
+/*style.cssと重複あり、要修正*/
+.room {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-bottom: 1px solid #FFF;
+}
+
+.center_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center_text {
+  text-align: center;
+}
+
+.transition_text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.title {
+  background-color: #FFF;
+  width: 1200px;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.receive_numbers {
+  display: flex;
+  margin-top: 50px;
+}
+
+.receive_number {
+  background-color: #FFF;
+  height: 250px;
+  width: 170px;
+  margin-right: 25px;
+  font-size: 150px;
+  font-weight: 600;
+  line-height: 250px;
+  text-align: center;
+}
+
+.receive_number:nth-child(3) {
+  margin-right: 70px;
+}
+
+.receive_number:last-child {
+  margin-right: 12px;
+}
+
+.receive_number:first-child {
+  margin-left: 12px;
+}
+
+.tenKey {
+  width: 980px;
+  margin: 0 110px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.number_keys {
+  display: flex;
+  width: 680px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.number_key {
+  width: 120px;
+}
+
+.function_keys {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.fnKey {
+  width: 280px;
+}
+
+.key {
+  line-height: 85px;
+  background: #DDD;
+  border-radius: 20px;
+  flex-shrink: 0;
+  height: 85px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.enter_key {
+  background: #676767;
+  color: #FFF;
+}
+
+.checkPicture1,
+.checkPicture2 {
+  background-color: #FFF;
+  width: 250px;
+  height: 340px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkPicture1 canvas,
+.checkPicture2 canvas {
+  width: 210px;
+  height: 260px;
+  background-color: #C8C8C8;
+  top: 20px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+}
+
+.checkPictures {
+  margin-top: 25px;
+  gap: 20px;
+  overflow-x: auto;
+  width: 1170px;
+}
+
+.scroll_content {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.checkPictures::-webkit-scrollbar {
+  height: 12px;
+  /* スクロールバーの高さ */
+}
+
+.checkPictures::-webkit-scrollbar-thumb {
+  background: #aaa;
+  /* ツマミの色 */
+  border-radius: 6px;
+  /* ツマミ両端の丸み */
+}
+
+.checkPictures::-webkit-scrollbar-track {
+  background: #ddd;
+  /* トラックの色 */
+  border-radius: 6px;
+  /* トラック両端の丸み */
+}
+
+.button {
+  height: 100px;
+  width: 500px;
+  border: #000 solid 5px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.button_y {
+  background-color: #676767;
+  color: #FFF;
+  border: 0px;
+}
+
+.button_list {
+  margin-top: 30px;
+  margin-left: 55px;
+  display: flex;
+  gap: 100px;
+}
+
+
+.button_n {
+  background-color: #FFF;
+  color: #000;
+}
+
+.button_center {
+  margin-left: 357px;
+  margin-top: 35px;
+}
+
+.frameImgList {
+  display: flex;
+  gap: 60px;
+  margin-top: 35px;
+}
+
+.frameImg {
+  background-color: #FFF;
+  width: 560px;
+  height: 380px;
+  position: relative;
+}
+
+.frameImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.title span {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.not_active {
+  background-color: #C8C8C8;
+  pointer-events: none;
+}
+
+.seeYouNextTime {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.top_box {
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+}
+.middle_box{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 510px;
+}
+
+.thankYouFor {
+  padding: 60px;
+}
+.finish_countDown{
+  padding: 10px;
+}
+
+.back_room {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.chosen {
+  outline: 5px dashed #878787;
+}
+
+.selected {
+  outline: dashed 5px #676767;
+  outline-offset: -5px;
+}
+
+.selectedBtn {
+  background-color: #676767;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/*DrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDraw*/
+.canvasBtn_sepa canvas {
+  background-color: #FFF;
+}
+
+.canvasBtn {
+  display: block;
+  width: 107px;
+  height: 132px;
+  margin-bottom: 16px;
+  margin-right: 20px;
+  padding: 0px;
+  border: 0px;
+}
+
+.canvasBtn:last-child {
+  margin-bottom: 0px;
+}
+
+.canvas_set {
+  position: relative;
+}
+
+.canvas-container:last-child {
+  z-index: -1;
+}
+
+.edit_section {
+  display: flex;
+}
+
+.canvas_sepa {
+  width: 585px;
+  height: 720px;
+  margin-right: 20px;
+}
+
+.tool_sepa {
+  width: 520px;
+  height: 640px;
+}
+
+.canvas-container {
+  position: absolute !important;
+  top: 0px;
+}
+
+
+.switch_toolBtn {
+  height: 60px;
+  width: 50%;
+  margin-right: 10px;
+  background-color: #FFF;
+  border-radius: 18px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 0px;
+  color: #D9D9D9;
+}
+
+.switch_toolBtn:last-child {
+  margin-right: 0px;
+}
+
+.switch_tool {
+  display: flex;
+}
+
+.toolBtn {
+  margin-right: 10px;
+  width: 100%;
+}
+
+.toolBtn:last-child {
+  margin-right: 0px;
+
+}
+
+.toolBtnList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stamp_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.colorCircle,
+.strokeBtn,
+.opacityBtn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.colorBtn_list,
+.strokeBtn_list,
+.opacityBtn_list {
+  display: flex;
+}
+
+#colorPicker {
+  transform: translateY(-3px);
+  background-color: #FFF;
+}
+
+#colorBtnRed {
+  background-color: red;
+}
+
+#colorBtnBlue {
+  background-color: blue;
+}
+
+#colorBtnGreen {
+  background-color: Green;
+}
+
+#colorBtnYellow {
+  background-color: Yellow;
+}
+
+#colorBtnOrange {
+  background-color: orange;
+}
+
+#colorBtnPurple {
+  background-color: purple;
+}
+
+#colorBtnBlack {
+  background-color: black;
+}
+
+.strokeBtn,
+.opacityBtn {
+  border: black 0px solid;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.draw_tab,
+.stamp_tab {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  height: 525px;
+}
+
+.button_list {
+  margin-bottom: 20px;
+}
+
+.switch_tool {
+  margin-bottom: 10px;
+}
+
+.canvasBtn_sepa button {
+  display: block;
+}
+
+.edit_section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stamp_menu {
+  margin-bottom: 20px;
+}
+
+.stampBtn {
+  height: 135px;
+  width: 135px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+.stampBtn svg{
+  max-width: 120px;
+  max-height: 120px;
+}
+.stampBtn:last-child {
+  margin-right: 0px;
+}
+
+.stampBtn_list {
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.finish_draw {
+  background-color: #767676;
+  border-radius: 20px;
+  color: #FFF;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 20px;
+  font-size: 25px;
+  width: 100%;
+}
+
+.canvas_sepa {
+  border: 1px solid #000;
+}
+
+.active-button {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.colorCircle,
+.strokeBtn,
+.opacityBtn {
+  border: 0px;
+  outline: #FFF 6px solid;
+  outline-offset: -5px;
+}
+
+.colorBtn_list .active-button,
+.strokeBtn_list .active-button,
+.opacityBtn_list .active-button {
+  outline: #D6D6D6 6px solid;
+  outline-offset: -5px;
+}
+
+#colorPicker {
+  outline: #FFF 11px solid;
+  transform: translateY(0px);
+}
+
+.colorCircle {
+  border: 8px solid #FFF;
+}
+
+.colorCircle:last-child {
+  border: 0px;
+}
+
+.colorPickWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.color_pic {
+  position: relative;
+}
+
+.edit {
+  display: flex;
+}
+
+/*DrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDrawDraw*/
+#open_settingRoom {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  z-index: 100001;
+}
+
+.room_setting {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+  z-index: 100000;
+}
+
+.button_setting{
+  margin-top: 20px;
+}
+.button_setting:first-child {
+  margin-top: 0px;
+}
+
+.center_setting {
+  width: 500px;
+}
+
+.scroll-disabled {
+  overflow: hidden;
+}
+
+/*SortSortSortSortSortSortSortSortSortSortSortSortSortSortSort*/
+
+.plate {
+  width: 721px;
+  height: 488px;
+  position: relative;
+}
+
+.plate_bg {
+  height: 488px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.targetA {
+  width: 135px;
+  height: 166px;
+  z-index: 1;
+  position: absolute;
+  border: 1px solid #000;
+  transition: all 200ms;
+}
+
+.targetA-1 {
+  width: 279px;
+  height: 348px;
+  left: 52px;
+  top: 70px;
+}
+
+.targetA-2 {
+  left: 364px;
+  top: 70px;
+}
+
+.targetA-3 {
+  left: 511px;
+  top: 70px;
+
+}
+
+.targetA-4 {
+  left: 364px;
+  top: 252px;
+}
+
+.targetA-5 {
+  left: 511px;
+  top: 252px;
+}
+
+.box_sidebar {
+  position: relative;
+  margin-left: 25px;
+}
+
+.box_list_outline {
+  border: 0px;
+  background-color: #FFF;
+  border-radius: 20px;
+  height: 390px;
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+.box_list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 25px;
+}
+
+.boxA,
+.boxB {
+  width: 124px;
+  height: 154px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.box_list .boxA,
+.box_list .boxB {
+  margin-bottom: 13px;
+  margin-right: 13px;
+}
+
+.target .boxA {
+  height: 100%;
+  width: 100%;
+}
+
+.boxA-1,
+.boxB-1 {
+  background-color: #DB6969;
+  color: white;
+}
+
+.boxA-2,
+.boxB-2 {
+  background-color: #DBD669;
+  color: white;
+}
+
+.boxA-3,
+.boxB-3 {
+  background-color: #8DDB69;
+  color: white;
+}
+
+.boxA-4,
+.boxB-4 {
+  background-color: #69DBD4;
+  color: white;
+}
+
+.boxA-5,
+.boxB-5 {
+  background-color: #a069db;
+  color: white;
+}
+
+
+.target .over {
+  border-style: dashed;
+  transform: scale(1.1);
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+#go_nextA,
+#go_nextB {
+  height: 60px;
+  background: #DDD;
+  width: 100%;
+  border-radius: 50px;
+  transition: all 200ms;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #FFF;
+  cursor: pointer;
+  border: 0px;
+  pointer-events: none;
+}
+
+.DnD_point {
+  display: flex;
+}
+
+.section_title {
+  background-color: #FFF;
+  height: 140px;
+  width: 1200px;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.section_title p {
+  border-radius: 40px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 140px;
+  margin: 0px;
+}
+
+.style_center_dnd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.room {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.selected {
+  outline: 3px dashed #676767;
+  outline-offset: -3px;
+}
+
+.boxA p,
+.boxB p,
+.targetA p,
+.targetB p {
+  position: absolute;
+  bottom: 5px;
+  right: 14px;
+  color: #FFF;
+}
+
+.selected::before,
+.targetA::before,
+.targetB::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #676767;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 10px 0px 0px 0px;
+}
+
+#mainCanvasA,
+#mainCanvasB {
+  border: #000 solid 1px;
+}
+
+.targetB {
+  width: 279px;
+  height: 346px;
+  z-index: 1;
+  position: absolute;
+  border: 1px solid #000;
+  transition: all 200ms;
+}
+
+.targetB-1 {
+  left: 52px;
+  top: 71px;
+}
+
+.targetB-2 {
+  left: 364px;
+  top: 71px;
+}
+
+/*SortSortSortSortSortSortSortSortSortSortSortSortSortSortSort*/
+.progress_bar {
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.clip-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #878787;
+  animation: clip 5s forwards;
+}
+
+@keyframes clip {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.check_style{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+}
+.check_style{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  -webkit-backdrop-filter: brightness(50%);
+  backdrop-filter: brightness(50%);
+  z-index: 10;
+}
+.check_style .button_y{
+  background-color: #FFF;
+  color: #000;
+}
+.check_style .button_n{
+  background-color: #878787;
+  color: #FFF;
+  border: 0px;
+}
+#checkCanvasA,#checkCanvasB{
+  background-color: #FFF;
+  margin-left: 290px;
+  margin-top: 30px;
+}
+
+.introduce img{
+  width: 70%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.stampBtn_shadow{
+  background-color: #444;
+}
